@@ -4,9 +4,8 @@
 <head>
   <!-- Required meta tags for Bootstrap -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
-  <meta charset="UTF-8">
   <title>Web Design Challenge!</title>
 
   <!--Bootstrap-->
@@ -17,37 +16,66 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">JIT DS, LLC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   
-  <nav class="navbar"> 
-    <ul> 
-      <li><a href="#" class="active">Home</a></li> 
-      <li><a href="#">Books</a></li> 
-      <li><a href="#">Blog</a></li> 
-      <li><a href="#">About Us</a></li> 
-      <li><a href="#">Support</a></li> 
-    </ul> 
-    
-    <select id = nav-select> 
-      <option value="" selected="selected">&#9776</option> 
-      
-      <option value="#">Home</option> 
-      <option value="#">Books</option> 
-      <option value="#">Blog</option> 
-      <option value="#">About Us</option> 
-      <option value="#">Support</option> 
-    </select> 
-  <!---<div class="clearfix"></div>-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots!
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="vClouds.html">Clouds</a>
+            <a class="dropdown-item" href="vHumidity.html">Humidity</a>
+            <a class="dropdown-item" href="vMax-temp.html">Maximum Temp</a>
+            <a class="dropdown-item" href="vWind-speed.html">Wind Speed</a>
+        <ul class="navbar-nav ml-auto">
+
+        </div>
+        </ul>
+        </li>
+      </ul>
+    </div>
+    <!--Need separate division to align some links on the right. cf, https://stackoverflow.com/questions/19733447/bootstrap-navbar-with-left-center-or-right-aligned-items/20362024-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Source Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+      </ul>
+  </div>
   </nav>  
-  <header class="header">
-    <h1>Welcome</h1>
-  </header>
-	<main>
-<p>This is my first paragraph. It is not very long</p>
-<p>This is my second paragraph. It, also, is not very long, but it is a little longer than the first paragraph. I don't know if I can finish on time so I am freaking out.</p>
- 
-</main>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          Hello World!
+        </div>
+        <div class="col-md-4">
+          Here's a box!
+        </div>
+          <div class="col-md-4">
+            Here's an Image!
+            <img src="Images/visualize-sm.png">
+           </div>
+      </div>
   
-
-</body>
-
+    </div>
+ 
+  </main>
+<!--Scripts required to make the navbar dropdown menu functional, pulled from bootstrap instructor demo (activity 11-3-5)-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
