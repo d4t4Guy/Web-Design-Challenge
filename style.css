@@ -33,8 +33,8 @@
 
 
 
-
-
+/*Giving the heading some padding so it's not at the very left edge of the viewport*/
+h1{margin: 20px;}
 
 /* Giving the body a pleasing background color*/
 
@@ -48,17 +48,25 @@ body {background: #B5B8E8;}
 
 /*floating image to left and resizing relative to container, so it fits within column*/
 .image img {
-    float:left;
-    max-width: 50%;
+    /*float:left; --to allow text to wrap around image*/
+    max-width: 75%;
     max-height: Auto;
 }
 
 .sidebar_image img {
-    float:right;
-    max-width: 80%;
-    max-height: Auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 10px;
+  max-width: 80%;
+  max-height: Auto;
 }
 
+.feature_image img {
+  float:none;
+  margin: 10px;
+  max-width: 80%;
+  max-height: Auto;
+}
 
 /*Media queries for responsive text, source: https://getbootstrap.com/docs/4.0/content/typography/   */
 html {
