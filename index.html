@@ -21,13 +21,14 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-
+      </ul>
+        
+    </div>
+    <!--Need separate division to align some links on the right. cf, https://stackoverflow.com/questions/19733447/bootstrap-navbar-with-left-center-or-right-aligned-items/20362024-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plots!
@@ -37,16 +38,9 @@
             <a class="dropdown-item" href="vHumidity.html">Humidity</a>
             <a class="dropdown-item" href="vMax-temp.html">Maximum Temp</a>
             <a class="dropdown-item" href="vWind-speed.html">Wind Speed</a>
-        <ul class="navbar-nav ml-auto">
-
-        </div>
-        </ul>
-        </li>
-      </ul>
-    </div>
-    <!--Need separate division to align some links on the right. cf, https://stackoverflow.com/questions/19733447/bootstrap-navbar-with-left-center-or-right-aligned-items/20362024-->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+              
+        
+        
         <li class="nav-item">
           <a class="nav-link" href="data.html">Source Data</a>
         </li>
@@ -55,24 +49,38 @@
         </li>
       </ul>
   </div>
-  </nav>  
+  </nav>
+  <header class="header">
+    <h1>Summary</h1>
+  </header>  
   <main>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          Hello World!
-        </div>
-        <div class="col-md-4">
-          Here's a box!
-        </div>
-          <div class="col-md-4">
-            Here's an Image!
-            <img src="Images/visualize-sm.png">
+        <div class="col-md-8">
+            <div class = "image">
+              <img src="Images/Fig1.png">
+            </div>
+          
+           <p> The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this analysis, we first pulled date from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+          <p> After assembling the data set, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: Temperature, Air Speed Velocity of an Unladen Swallow, Humidity, and Cloudiness. </p>
            </div>
-      </div>
-  
-    </div>
- 
+           
+        <div class="col-md-4">
+          <div class = "sidebar_image">
+            <img src="Images/Fig1.png">
+          <br><br>
+          <div class = "sidebar_image">
+            <img src="Images/Fig2.png">
+          </div><br><br>
+          <div class = "sidebar_image">
+            <img src="Images/Fig3.png">
+          </div><br><br>
+          <div class = "sidebar_image">
+            <img src="Images/Fig4.png">
+          </div>
+          </div>
+        </div>
+        </div>
   </main>
 <!--Scripts required to make the navbar dropdown menu functional, pulled from bootstrap instructor demo (activity 11-3-5)-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

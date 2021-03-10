@@ -36,12 +36,49 @@
 
 
 
-/* Giving the body a pleasing background color, adding font sizes for the h1 and h3 elements we'll be using */
+/* Giving the body a pleasing background color*/
 
-body {
-    background: #A5A8D8;
-  
+body {background: #B5B8E8;}
+
+/*aligning explanatory text to center*/
+.explain {
+    text-align: center;
+    font-size: larger;
+}
+
+/*floating image to left and resizing relative to container, so it fits within column*/
+.image img {
+    float:left;
+    max-width: 50%;
+    max-height: Auto;
+}
+
+.sidebar_image img {
+    float:right;
+    max-width: 80%;
+    max-height: Auto;
 }
 
 
-
+/*Media queries for responsive text, source: https://getbootstrap.com/docs/4.0/content/typography/   */
+html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
