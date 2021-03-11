@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags for Bootstrap -->
+  <meta charset="utf-8">
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+  <title>Comparison</title>
+
+  <!--Bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+
+<!--Custom styles-->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">JIT DS, LLC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+        
+    </div>
+    <!--Need separate division to align some links on the right. cf, https://stackoverflow.com/questions/19733447/bootstrap-navbar-with-left-center-or-right-aligned-items/20362024-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots!
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="vClouds.html">Clouds</a>
+            <a class="dropdown-item" href="vHumidity.html">Humidity</a>
+            <a class="dropdown-item" href="vMax-temp.html">Maximum Temp</a>
+            <a class="dropdown-item" href="vWind-speed.html">Wind Speed</a>
+              
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Source Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+      </ul>
+  </div>
+  </nav>
+  <main>
+    <div class="container">
+        <div class="row">                        <!--Top row (Heading)-->
+            <div class="col-md-12">
+                <header class="header">
+                    <h1>Comparison</h1>
+                  </header>
+                  </div>
+                </div> 
+                  
+    <div class="row">                        <!--First row-->
+        <div class="col-md-6">
+            <div class="comp_image"><img src="Images/Fig1.png"></div>
+        </div>
+        <div class="col-md-6">
+            <div class="comp_image"><img src="Images/Fig2.png"></div>
+        </div>
+     </div>
+    <div class="row">                        <!--Second (bottom) row-->
+        <div class="col-md-6">
+            <div class="comp_image"><img src="Images/Fig3.png"></div>
+        </div>
+        <div class="col-md-6">
+            <div class="comp_image"><img src="Images/Fig4.png"></div>
+        </div>
+     </div>
+    </div>
+           
+  <!--      <div class="row">
+            <div class="col-md-6">
+                <div class = "image">
+                <img src="Images/Fig2.png">
+                <img src="Images/Fig4.png">
+                </div>
+        </div>col
+      </div>row
+    </div>container
+-->  
+  </main>
+<!--Scripts required to make the navbar dropdown menu functional, pulled from bootstrap instructor demo (activity 11-3-5)-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -48,9 +48,8 @@ body {background: #B5B8E8;}
 
 /*floating image to left and resizing relative to container, so it fits within column*/
 .image img {
-    /*float:left; --to allow text to wrap around image*/
-    max-width: 75%;
-    max-height: Auto;
+  max-width: 80%;
+  max-height: auto;
 }
 
 .sidebar_image img {
@@ -65,6 +64,12 @@ body {background: #B5B8E8;}
   float:none;
   margin: 10px;
   max-width: 80%;
+  max-height: Auto;
+}
+.comp_image img {
+  float:left;
+  margin: none;
+  max-width: 120%;
   max-height: Auto;
 }
 
