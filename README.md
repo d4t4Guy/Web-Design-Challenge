@@ -1,1 +1,2 @@
 # Web-Design-Challenge
+This repo contains a website built to practice CSS and HTML. It repurposes data from prior exercises to form a dashboard of plots generated in matplotlib. Findings are included within the content of the web pages. 
